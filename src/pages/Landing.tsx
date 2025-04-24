@@ -4,6 +4,7 @@ import React from "react";
 import Features from "components/Features";
 import Footer from "components/Footer";
 import StoreCTA from "components/StoreCTA";
+import ContactUs from "components/ContactUs";
 
 const LandingPage: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const LandingPage: React.FC = () => {
             <Hero />
             <Features />
             <StoreCTA />
+            <ContactUs />
             <Footer />
         </Layout>
     )
