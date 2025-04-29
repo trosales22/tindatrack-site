@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         <div className="max-w-xl">
           <h1 className="mb-5 text-5xl font-bold">Welcome to TindaTrack</h1>
           <p className="mb-5 text-lg">
-            TindaTrack helps small businesses track inventory, sales, and investments—so you can spend
+            TindaTrack helps small businesses track inventory & sales—so you can spend
             less time guessing and more time growing.
           </p>
           <p className="mb-5 text-sm text-gray-200">
