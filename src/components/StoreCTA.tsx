@@ -1,5 +1,5 @@
-import React from "react";
-import RegisterForm from "./RegisterForm";
+import React from 'react';
+import RegisterForm from './RegisterForm';
 
 const StoreCTA: React.FC = () => {
   return (
@@ -10,7 +10,8 @@ const StoreCTA: React.FC = () => {
             Register Your Store to Get Started
           </h1>
           <p className="text-lg text-gray-600">
-            Start by entering your business owner details, then provide information for your first shop.
+            Start by entering your business owner details, then provide information for your first
+            shop.
           </p>
         </div>
 

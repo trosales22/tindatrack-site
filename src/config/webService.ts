@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import { debounce, get } from 'lodash';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 const debouncedToastError = debounce(toast.error, 250);
 
@@ -12,7 +12,8 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.interceptors.response.use(
   (response: AxiosResponse) => response,
   (error: AxiosError) => {
-    const errorMessage: any = get(error, 'response.data.errors[0].message') || get(error, 'response.data.message');
+    const errorMessage: any =
+      get(error, 'response.data.errors[0].message') || get(error, 'response.data.message');
     const errorCode = error?.response?.status;
 
     if (errorCode === 400) {
@@ -29,5 +30,5 @@ axios.interceptors.response.use(
     }
 
     return Promise.reject(error);
-  }
+  },
 );

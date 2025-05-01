@@ -1,9 +1,8 @@
-import { Route, Routes } from "react-router-dom";
-import './App.css'
-import Wrapper from 'components/Wrapper'
-import LandingPage from "pages/Landing";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Wrapper from 'components/Wrapper';
+import LandingPage from 'pages/Landing';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -12,9 +11,9 @@ function App() {
         <Route path="/" element={<LandingPage />} />
       </Routes>
 
-      <ToastContainer />
+      <Toaster />
     </Wrapper>
-  )
+  );
 }
 
-export default App
+export default App;
