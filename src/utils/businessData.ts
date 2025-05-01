@@ -42,16 +42,3 @@ export const productCategoryOptions = [
   { value: 'fruits', label: 'Fruits' },
   { value: 'others', label: 'Others' },
 ];
-
-export const businessInvestmentTypeOptions = [
-  { value: '--SELECT--', label: '--SELECT--', disabled: true },
-  { value: 'capital', label: 'Capital' },
-  { value: 'raw_materials', label: 'Raw Materials' },
-];
-
-export const businessInvestmentSourceTypeOptions = [
-  { value: '--SELECT--', label: '--SELECT--', disabled: true },
-  { value: 'personal', label: 'Personal' },
-  { value: 'loan', label: 'Loan' },
-  { value: 'supplier', label: 'Supplier' },
-];
